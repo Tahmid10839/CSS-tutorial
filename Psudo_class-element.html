@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class and Element</title>
+
+    <style>
+        a.my-link:hover{
+            color: green;
+        }
+        input[type=text]{
+            padding: 10px;
+            width: 200px;
+            font-size: 20px;
+        }
+        input[type=text]:hover{
+            border: 2px solid blue;
+        }
+        input[type=text]:focus{
+            background-color: powderblue;
+        }
+        input[type=text]::placeholder{
+            color: yellowgreen;
+        }
+
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 200px;
+        }
+        th,td{
+            border: 1px solid black;
+            text-align: center;
+        }
+        tr:nth-child(odd){
+            background-color: royalblue;
+        }
+
+        /*Pseudo Class*/
+        .p1:hover{
+            color: royalblue;
+        }
+        /*Pseudo Element*/
+        .p1::first-letter{
+            color: seagreen;
+            font-size: 30px;
+        }
+        .p1::before{
+            content: "<";
+        }
+        .p1::after{
+            content: ">";
+        }
+
+        .demo p:first-child{
+            background-color: seagreen;
+            color: skyblue;
+        }
+        .demo p:last-child{
+            background-color: seagreen;
+            color: skyblue;
+        }
+        .demo p:nth-child(2){
+            background-color: seagreen;
+            color: skyblue;
+        }
+
+        li:first-of-type{
+            background-color: springgreen;
+            color: black;
+        }
+        li:last-of-type{
+            background-color: springgreen;
+            color: black;
+        }
+
+        .p2::first-line{
+            color: blue;
+            font-size: 20px;
+        }
+
+        ::selection{
+            background-color: coral;
+            color: white;
+        }
+
+        .demo::before, .demo::after{
+            width: 100%;
+            content: "Bangladesh";
+            height: 50px;
+            text-align: center;
+            background-color: turquoise;
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <a class="my-link" href="#">Tutorial</a>
+    <a href="#">Home</a><br><br>
+
+    <input type="text" placeholder="Enter your name"><br><br>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Tahmid</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Rahim</td>
+            <td>30</td>
+        </tr>
+    </table><br><br>
+
+    <p class="p1">Consetetur dolor stet sit gubergren sit ea stet consetetur dolores. Voluptua voluptua diam et et. Sed magna sed invidunt sanctus.</p>
+
+    <div class="demo">
+        <p>Dolor ut kasd ipsum nonumy ipsum, ut justo dolor magna labore clita dolor. Amet erat rebum tempor aliquyam ut diam,.</p>
+        <p>Dolor ut kasd ipsum nonumy ipsum, ut justo dolor magna labore clita dolor. Amet erat rebum tempor aliquyam ut diam,.</p>
+        <p>Dolor ut kasd ipsum nonumy ipsum, ut justo dolor magna labore clita dolor. Amet erat rebum tempor aliquyam ut diam,.</p>
+        <p>Dolor ut kasd ipsum nonumy ipsum, ut justo dolor magna labore clita dolor. Amet erat rebum tempor aliquyam ut diam,.</p>
+    </div><br><br>
+
+    <ul>
+        <li>Home1</li>
+        <li>Home2</li>
+        <li>Home3</li>
+        <li>Home4</li>
+    </ul><br><br>
+
+    <p class="p2">Duo eos sit dolore vero stet sea duo. Duo eirmod duo sit gubergren voluptua lorem sed et ea. Amet sea kasd et et ut sit ipsum aliquyam sadipscing. Dolor stet sed diam stet est. Sanctus eirmod sit rebum diam diam diam sanctus tempor. Sea dolor aliquyam sed et ut amet.</p>
+    
+</body>
+</html>

@@ -1,0 +1,145 @@
+/*For Desktop*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*navbar design starts here*/
+.navbar{
+    position: sticky;
+    width: 100%;
+    top: 0;
+} 
+.navbar h1{
+    margin-right: 60px;
+}
+.nav-logo{
+    text-align: left;
+}
+.nav-heading h1{
+    text-align: right;
+    margin-top: 25px;
+}
+.navbar-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navbar-menu a{
+    margin-top: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: transparent;
+}
+/* navabr design ends here */
+
+/* profile design starts here */
+/* .profile{
+    padding: 120px;
+} */
+/* .profile .top-weather-icon{
+    top: 120px;
+}  */
+.weather{
+    width: 120px;
+}
+.profile .top-weather-icon{
+    /* position: absolute; */
+    /* right: 60px;
+    top: 20px; */
+    margin-top: 10px;
+    margin-right: 50px;
+    transition: width 2s,transform 2s;
+}
+.profile .top-weather-icon:hover{
+    width: 140px;
+}
+.profile .bottom-weather-icon{
+    /* position: absolute; */
+    /* right: 60px;
+    top: 20px; */
+    margin-left: 50px;
+    margin-top: 50px;
+    transition: width 2s,transform 2s;
+}
+.profile .bottom-weather-icon:hover{
+    width: 140px;
+}
+/*Profile design ends here*/
+
+/* aboute me design starts here */
+
+.about-me-img{
+    margin-top: 30px;
+}
+.about-me-img img{
+    width: 250px;
+    height: 250px;
+}
+.about-me-desc{
+    margin-top: 30px;
+    
+}
+.about-me-desc p{
+    text-align: left;
+}
+
+
+/* about me design ends here */
+
+/* professional experience design start here */
+
+.professional-experience .card{
+    height: 650px;
+}
+
+/* professional experience design end here */
+
+/* contact form design start here */
+
+.contact-me{
+    margin: 0 ;
+}
+.achievement{
+    padding-right: 50px;
+}
+.contact-me button{
+    width: 150px;
+}
+.contact-links{
+    position: relative;
+}
+.media-buttons{
+    position: absolute;
+    margin-top: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* contact form design end here */
+
+/* footer design start here */
+.footer{
+    height: 100px;
+}
+.footer-menu{
+    margin-top: 10px;
+}
+.footer-menu a{
+    display: inline;
+    margin: 10px;
+}
+.footer-desc{
+    margin-top: 10px;
+}
+
+/* footer design end here */
+

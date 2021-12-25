@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .div1{
+            width: 300px;
+            border: 3px solid green;
+            padding: 10px;
+            position: static; /*Default position*/
+            top: 20px; /*This will not work if the position is static*/
+
+        }
+        .div2{
+            width: 300px;
+            border: 3px solid orange;
+            padding: 10px;
+            position: relative;
+            top: 100px;
+            left: 50px;
+        }
+        .navbar-div{
+            width: 100%;
+            background-color: rgb(2, 2, 48);
+            position: fixed;
+            text-align: center;
+            top: 0px;
+            left: 0px;
+            box-sizing: border-box;
+        }
+        .navbar-div ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar-div ul li{
+            float: left;
+        }
+        .navbar-div ul li a{
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            display: block;
+            padding: 15px;
+            margin: 5px;
+            position: relative;
+        }
+        .navbar-div li a.active{
+            border-bottom: 3px solid #2D88FF;
+            color: #2D88FF;
+            /* background-color: orange; */
+            /* border-radius: 5px; */
+        }
+        .navbar-div li a:hover:not(.active){
+            background-color: #555;
+            border-radius: 5px;
+
+        }
+        .navbar-div li a:hover .tt{
+            visibility: visible;
+        }
+        .div3{
+            width: 300px;
+            height: 300px;
+            border: 3px solid blue;
+            position: relative;
+            padding: 10px;
+        }
+        .div4{
+            width: 100px;
+            border: 3px solid red;
+            position: absolute;
+            padding: 10px;
+            left: 180px;
+            top: 200px;
+            
+        }
+        .tt{
+            visibility: hidden;
+            position: absolute;
+            background-color: rgb(225, 235, 247);
+            color: black;
+            display: block;
+            top: 60px;
+            padding: 5px;
+            left: 8px;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar-div">
+        <ul>
+            <li><a href="#" class="active">Home<span class="tt">Home</span></a></li>
+            <li><a href="#">Contact<span class="tt">Contact</span></a></li>
+            <li><a href="#">About<span class="tt">About</span></a></li>
+        </ul>
+        
+    </div><br><br><br><br><br><br>
+    <p></p>
+    <div class="div1">
+        <p>Amet sed consetetur ipsum at nonumy est ut. Eos lorem consetetur sea clita. Sit voluptua et ut dolor invidunt dolor nonumy sed accusam. Sit duo clita dolor stet, kasd invidunt ut eirmod sea clita dolor justo gubergren. Invidunt ipsum et erat ipsum magna. Dolor ea duo erat ipsum gubergren sit aliquyam, takimata lorem sed voluptua sed, erat sea ipsum eos.</p>
+    </div>
+    <p></p>
+    <div class="div2">
+        <p>Amet sed consetetur ipsum at nonumy est ut. Eos lorem consetetur sea clita. Sit voluptua et ut dolor invidunt dolor nonumy sed accusam. Sit duo clita dolor stet, kasd invidunt ut eirmod sea clita dolor justo gubergren. Invidunt ipsum et erat ipsum magna. Dolor ea duo erat ipsum gubergren sit aliquyam, takimata lorem sed voluptua sed, erat sea ipsum eos.</p>
+    </div><br><br><br><br><br>
+    <p></p>
+    <div class="div3">
+        <p>Justo sanctus amet et aliquyam tempor sit erat aliquyam sed, lorem voluptua magna amet et dolor accusam et takimata. At nonumy takimata sea erat tempor erat amet, et sea rebum lorem ut labore, sit amet kasd consetetur tempor tempor amet sit. At et sea gubergren clita voluptua nonumy et sed.</p>
+        <div class="div4">
+            Hi Bangladesh
+        </div>
+    </div>
+    <p>Diam nonumy takimata voluptua nonumy ea et sed voluptua elitr sea, consetetur eos sed erat lorem duo ipsum est. Dolor voluptua duo sit tempor takimata erat et diam, et ipsum et invidunt sed et sed amet. Dolores tempor eirmod erat rebum, est justo nonumy dolore magna ipsum ut tempor et sit, invidunt dolor invidunt sanctus amet magna aliquyam ea, sadipscing voluptua dolor dolores at et consetetur no duo, aliquyam ea clita dolor ea. Magna et dolor voluptua ipsum dolores no eirmod dolor, justo gubergren est eirmod ea eos sadipscing kasd sanctus. Sed sed gubergren invidunt amet sed kasd ipsum voluptua lorem. Nonumy amet invidunt tempor at nonumy no vero sit ipsum. Justo et ea erat sit duo, ut sed gubergren takimata stet ipsum rebum. Labore nonumy erat eirmod rebum sit, eirmod ipsum duo tempor et consetetur, stet et tempor sit sanctus sed lorem nonumy dolor nonumy, et ipsum et ea diam amet amet. Accusam rebum dolor justo dolores. Sit dolor justo eos dolores eirmod ipsum dolor. Diam vero labore magna no takimata sed et, ea diam magna ipsum dolore duo elitr takimata gubergren takimata, voluptua tempor sit et lorem et amet eos ipsum. Diam et dolor clita est et et ut aliquyam, sanctus lorem dolores kasd amet. Sit vero amet consetetur sit, eirmod consetetur ea ut ipsum sanctus elitr amet. Kasd consetetur stet takimata est tempor sea. Voluptua sit eirmod sed sit ipsum. Sea justo takimata clita vero est dolor amet eos. Amet consetetur est dolor et dolores dolor lorem. Et dolor est sadipscing stet, dolor magna eirmod at justo et et dolor. Takimata vero sadipscing voluptua diam labore stet, consetetur amet takimata magna labore rebum invidunt nonumy, eirmod et dolores sanctus et sanctus eirmod amet dolor lorem. Sadipscing diam et accusam amet gubergren, lorem ut consetetur tempor dolor sit ea dolores elitr, voluptua gubergren sed invidunt vero et. Lorem gubergren dolore aliquyam aliquyam magna at, aliquyam consetetur sit est duo. Voluptua sadipscing kasd labore sanctus sea sit, lorem dolor rebum sanctus eirmod rebum, magna et sadipscing at magna sed tempor et takimata dolores, magna et gubergren vero dolores vero diam est, et dolore eirmod gubergren at labore est, diam nonumy ipsum ipsum dolores accusam et takimata. Tempor elitr vero rebum diam, rebum voluptua amet erat lorem dolore. Amet eirmod dolore aliquyam nonumy magna stet. Clita dolore erat dolor dolores diam. Nonumy diam sanctus duo no accusam, kasd clita dolor sanctus amet est tempor, kasd diam ipsum et gubergren ea et, no diam gubergren rebum dolor amet. Stet dolor lorem no tempor, duo est elitr rebum erat dolor sea diam et gubergren, justo diam diam sadipscing est invidunt invidunt, et sed aliquyam sit et. Erat dolor lorem aliquyam et sed erat dolor kasd eirmod. Invidunt diam erat kasd voluptua aliquyam erat diam dolor no, eirmod et amet ipsum diam kasd amet et voluptua, amet dolore dolor amet ipsum justo ut, duo sea sit sea voluptua sed labore, amet invidunt ut vero vero gubergren diam vero et, ut nonumy takimata gubergren sed dolor no labore dolores. Dolore sanctus consetetur gubergren amet erat, sea dolor et et ipsum. Ipsum et no et rebum nonumy diam vero, et sit stet dolore rebum ut eos dolore sadipscing et. Et amet ipsum takimata sanctus diam justo eirmod sed lorem. Est est labore amet ipsum sea magna, sed ut dolores amet et lorem ut. Nonumy voluptua consetetur justo tempor et accusam, stet vero no aliquyam elitr. Ea sed aliquyam eirmod accusam dolore kasd sed ut elitr, consetetur aliquyam ut rebum et aliquyam et, sit takimata sed sit accusam magna, dolor sed clita et dolor et dolores elitr. Sanctus lorem aliquyam sed consetetur accusam. Duo est est amet gubergren rebum sed sanctus lorem sanctus. Sed erat consetetur voluptua duo voluptua, dolor duo dolor dolor ipsum sea sed kasd dolore, sed consetetur ea et amet eos ut tempor. Clita et dolore ut ea amet invidunt rebum, erat voluptua sanctus no vero eirmod et sanctus dolore ut. Gubergren sed rebum sadipscing accusam sea stet sed, eos sanctus amet sit diam magna invidunt labore et, sadipscing elitr ea labore dolores invidunt sed et sit, ea diam stet diam vero aliquyam sed amet sea kasd, stet tempor rebum invidunt invidunt, labore accusam dolores invidunt nonumy amet amet et dolor, at duo sed kasd diam kasd clita et, et labore tempor et erat rebum ipsum ipsum ipsum accusam, dolor takimata takimata ut tempor, tempor sea eos vero vero eirmod sit stet consetetur, tempor rebum tempor voluptua magna sadipscing duo dolores, amet sit et et sed nonumy dolores. Eirmod sanctus no est aliquyam sed, stet duo stet ut gubergren et. Sea stet sed lorem sadipscing. Ut labore invidunt stet duo. Diam diam aliquyam eirmod sadipscing sit dolor vero. Amet justo at sadipscing sed et et ipsum ipsum. Tempor no dolore sed at. Diam.</p>
+    
+</body>
+</html>

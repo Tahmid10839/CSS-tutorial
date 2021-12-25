@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Columns Design</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .column{
+            flex: 25%;
+            padding: 10px;
+        }
+        @media screen and (max-width:992px){
+            .column{
+                flex: 50%;
+            }
+
+        }
+        @media screen and (max-width:600px){
+            .row{
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+            <h1>HTML</h1>
+            <p>Stet ea ut dolor takimata eos at dolore eirmod sed, sit gubergren duo consetetur sadipscing amet gubergren amet. No diam magna sit accusam et takimata. Ea et rebum sadipscing et diam. Dolor amet eirmod dolor nonumy dolores dolores lorem sed, lorem invidunt aliquyam sanctus consetetur justo ipsum, magna dolor magna.</p>
+        </div>
+        <div class="column">
+            <h1>CSS</h1>
+            <p>Stet ea ut dolor takimata eos at dolore eirmod sed, sit gubergren duo consetetur sadipscing amet gubergren amet. No diam magna sit accusam et takimata. Ea et rebum sadipscing et diam. Dolor amet eirmod dolor nonumy dolores dolores lorem sed, lorem invidunt aliquyam sanctus consetetur justo ipsum, magna dolor magna.</p>
+        </div>
+        <div class="column">
+            <h1>Javascript</h1>
+            <p>Stet ea ut dolor takimata eos at dolore eirmod sed, sit gubergren duo consetetur sadipscing amet gubergren amet. No diam magna sit accusam et takimata. Ea et rebum sadipscing et diam. Dolor amet eirmod dolor nonumy dolores dolores lorem sed, lorem invidunt aliquyam sanctus consetetur justo ipsum, magna dolor magna.</p>
+        </div>
+        <div class="column">
+            <h1>Bootstrap</h1>
+            <p>Stet ea ut dolor takimata eos at dolore eirmod sed, sit gubergren duo consetetur sadipscing amet gubergren amet. No diam magna sit accusam et takimata. Ea et rebum sadipscing et diam. Dolor amet eirmod dolor nonumy dolores dolores lorem sed, lorem invidunt aliquyam sanctus consetetur justo ipsum, magna dolor magna.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

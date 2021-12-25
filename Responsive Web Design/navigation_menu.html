@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Menu</title>
+    <style>
+        .menu{
+            background-color: cadetblue;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .menu a{
+            text-decoration: none;
+            padding: 20px;
+            color: white;
+        }
+        .menu a:hover{
+            background-color: gray;
+        }
+        @media screen and (max-width:600px){
+            .menu{
+                flex-direction: column;
+            }
+            .menu a{
+                text-align: center;
+                background-color: indigo;
+                margin: 5px;
+                border-radius: 10px;
+            }
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Tutorial</a>
+        <a href="#">Contact Me</a>
+        <a href="#">About Me</a>
+    </div>
+    
+</body>
+</html>

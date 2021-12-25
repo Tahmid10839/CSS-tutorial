@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Table</title>
+    <style>
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th,td{
+            border: 2px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+        th{
+            background-color: green;
+            color: white;
+            height: 30px;
+            vertical-align: bottom;
+        }
+        tr:nth-child(even){
+            background-color: orange;
+        }
+        tr:nth-child(odd){
+            background-color: orchid;
+        }
+        tr:hover{
+            background-color: powderblue;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption><u>Student Details</u></caption>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>GPA</th>
+            <th>Bio</th>
+            <th>Phone</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Tahmid</td>
+            <td>3.96</td>
+            <td>Dolor et vero justo et amet sed et et dolor diam. Invidunt vero lorem labore duo aliquyam elitr ea ea.</td>
+            <td>01515637957</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Rahim</td>
+            <td>3.98</td>
+            <td>Dolor et vero justo et amet sed et et dolor diam. Invidunt vero lorem labore duo aliquyam elitr ea ea.</td>
+            <td>01546677961</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Karim</td>
+            <td>4.00</td>
+            <td>Dolor et vero justo et amet sed et et dolor diam. Invidunt vero lorem labore duo aliquyam elitr ea ea.</td>
+            <td>01046464698</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Form</title>
+    <style>
+        input[type=text]{
+            width: 300px;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 20px;
+            /* border: 2px solid salmon;
+            border-radius: 5px; */
+            border: none;
+            border-bottom: 2px solid salmon;
+            box-sizing: border-box;
+            background-color: steelblue;
+        }
+
+        #search{
+            width: 200px;
+            background-image: url(search.png);
+            background-repeat: no-repeat;
+            background-position: 8px 6px;
+            padding-left: 50px;
+            background-color: white;
+            transition: width 0.5s ease-in-out;
+            
+        }
+        #search:focus{
+            background-color: skyblue;
+            width: 300px;    
+        }
+        textarea{
+            resize: none;
+            width: 50%;
+            padding: 10px;
+            border: 2px solid gray;
+            border-radius: 5px;
+
+        }
+        input[type=button], input[type=reset]{
+            width: 100px;
+            padding: 5px;
+            border: none;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+
+        select{
+            width: 200px;
+            background-color: tomato;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        
+        <input type="text" name="search" id="search" placeholder="Search"><br>
+        
+        <label for="fname">First Name</label><br>
+        <input type="text" name="fname" id="fname"><br>
+
+        <label for="lname">Last Name</label><br>
+        <input type="text" name="lname" id="lname"><br><br>
+
+        <select name="names" id="names">
+            <option value="c">C</option>
+            <option value="c++">C++</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+        </select><br><br>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Write your comments here"></textarea><br><br>
+        <input type="button" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <style>
+        .course-list{
+            background-color: teal;
+            padding: 20px;
+            color: white;
+        }
+        .course-list ul{
+            list-style-type: none;
+            list-style-position: inside;
+            list-style-image: url(checked.png);
+        }
+
+        .course-list2{
+            background-color: blueviolet;
+            color: white;
+            padding: 5px;
+            font-size: 20px;
+            box-sizing: border-box;
+        }
+        .course-list2 ul{
+            list-style-type: none;
+        }
+        /* .course-list2 li{
+            padding: 3px;
+        } */
+        .course-list2 li::before{
+            content: '\f058';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: bold;
+            display: inline-block;
+            margin: 5px;
+            font-size: 30px;
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <div class="course-list">
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>JQuery</li>
+        </ul>
+
+    </div><br>
+    <div class="course-list2">
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>JQuery</li>
+        </ul>
+
+    </div>
+    
+</body>
+</html>

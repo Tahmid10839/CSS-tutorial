@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD | Grid View</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            /* margin: 0; */
+        }
+        .header{
+            background-color: coral;
+            padding: 10px 20px;
+            text-align: center;
+            color: white;
+            
+        }
+        .nav-menu{
+            background-color: teal;
+            padding: 10px;
+        
+        }
+        .nav-menu a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+        }
+        .nav-menu a:hover{
+            background-color: gray;
+        }
+        .main{
+            background-color: powderblue;
+            padding: 10px 20px;
+        }
+        .aside{
+            background-color: cadetblue;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .footer{
+            background-color: rgb(2, 2, 31);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        /*For Mobile*/
+        [class*="col-"]{
+                width: 100%;
+        }
+        
+
+        [class*="col-"]{
+            float: left;
+
+        }
+        .row::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        @media screen and (min-width:600px){
+            /*For Tablet*/
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+        }
+
+        @media screen and (min-width:768px){
+            /*For Desktop*/
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            
+            /*             
+            .nav-menu a{
+                background-color: indigo;
+                text-align: center;
+                margin: 5px;
+            } */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Nazre Imam Tahmid</h1>
+    </div>
+    <div class="row">
+        <div class="nav-menu col-s-3 col-2">
+            <a href="#">Home</a>
+            <a href="#">Contact Me</a>
+            <a href="#">About Me</a>
+        </div>
+        <div class="main col-s-9 col-7">
+            <h1>I am a Web Designer</h1>
+            <p>Labore gubergren invidunt sit gubergren vero sea. Kasd sed rebum takimata eirmod justo sit voluptua sed ut, dolores dolores sed kasd accusam elitr elitr aliquyam et clita. Takimata no et lorem duo sit sed clita et, tempor sed duo sanctus ipsum lorem ut, dolore erat eirmod justo sanctus, sit et sit consetetur dolor lorem, lorem rebum diam lorem justo consetetur dolor. Ipsum est sea diam dolor sit sit erat lorem gubergren, takimata voluptua sadipscing amet et ipsum diam. Amet dolores aliquyam et ut aliquyam labore labore ipsum voluptua, diam lorem amet no et lorem et sanctus, diam dolor sit kasd nonumy dolores, sed ipsum sed est tempor. Ipsum sadipscing tempor ea accusam duo, eos no dolor sit elitr. Dolor diam erat no stet est accusam ipsum sit justo. Voluptua ea sed sadipscing dolores sed erat kasd. Justo labore ut amet accusam. Amet consetetur takimata sit erat consetetur takimata est vero.</p>
+            <p>Amet sed ut no stet tempor sanctus rebum et ea sadipscing, rebum amet justo sadipscing consetetur nonumy eos lorem. Sanctus sit at consetetur ut et dolores sanctus et. Elitr ipsum et lorem invidunt eirmod gubergren eos sit ipsum. Nonumy dolor kasd dolores sed consetetur gubergren. Elitr sed dolor accusam eos dolores rebum magna. Diam sit sadipscing et vero stet sanctus sit, et duo rebum erat diam elitr diam duo amet, amet dolor takimata et consetetur amet magna vero, et ea dolor ipsum ipsum. Dolor rebum gubergren ipsum sadipscing erat, rebum sea elitr eos et ea sed dolore sea at, magna nonumy kasd kasd justo dolores amet, dolor eirmod amet et rebum sed consetetur, sanctus justo clita tempor et sea vero accusam ut amet. Et nonumy no labore elitr amet amet dolores, ipsum eos sed et dolor. Sit takimata lorem et erat sed magna sadipscing lorem eos, gubergren ipsum diam justo duo et eirmod at, aliquyam no stet no rebum amet duo diam diam et. Lorem sed est lorem sed ipsum gubergren elitr, elitr gubergren tempor accusam est diam elitr vero diam ipsum, tempor accusam duo est voluptua nonumy lorem ut ea. Stet et ipsum at sanctus eirmod. Elitr duo dolor.</p>
+            <p>Duo voluptua duo magna invidunt lorem, diam vero lorem sit stet, consetetur ut ut eirmod est magna ipsum kasd, amet dolores rebum diam gubergren. Ea sea voluptua et eos eos clita sit. Lorem justo accusam ea stet lorem elitr diam duo takimata. Sed sed eirmod lorem eirmod accusam ipsum consetetur takimata kasd, diam amet sed dolore et et, gubergren stet ea amet sanctus eirmod no eirmod ut. Labore eos aliquyam amet diam sed, ea diam aliquyam consetetur et. Kasd lorem et at ut tempor voluptua diam diam. Ipsum lorem et vero diam consetetur, diam ipsum dolores et sed vero et accusam ipsum. Kasd dolor consetetur kasd no erat magna labore. Clita clita vero gubergren vero rebum dolore ea, est amet sed consetetur at lorem at elitr sed. Sit stet voluptua diam amet ut sadipscing, kasd et amet dolores nonumy, kasd dolor labore sea sanctus clita ipsum dolore no eirmod, dolores et erat eirmod clita et ut vero. Vero ipsum sed sea sanctus eos nonumy invidunt, amet et dolor ipsum at diam amet. At sit at et lorem ipsum. Tempor duo gubergren est diam ipsum dolor consetetur no, at lorem invidunt takimata voluptua, eirmod kasd sea amet takimata. Voluptua invidunt dolores.</p>
+        </div>
+        <div class="aside col-s-12 col-3">
+            <h2>What I love?</h2>
+            <p>Invidunt voluptua eirmod dolore voluptua stet lorem consetetur. Invidunt sed dolor ipsum magna invidunt. Eirmod duo sed amet aliquyam lorem kasd dolor, eirmod sadipscing clita stet et ea consetetur, ipsum sed takimata gubergren at amet at vero kasd accusam, erat et ea sed sadipscing consetetur. Erat dolores dolore dolor vero,.</p>
+            
+            <h2>What I do?</h2>
+            <p>Consetetur et et amet ipsum sanctus. Labore sed clita at eirmod elitr erat vero dolores, elitr ipsum consetetur lorem at, et eos amet magna no ipsum ea sit eirmod tempor. Dolor amet ipsum gubergren tempor. Sadipscing est elitr at sit dolor voluptua sanctus diam. Et accusam tempor labore dolor sed.</p>
+        
+            <h2>What I don't love?</h2>
+            <p>Sed et voluptua sed gubergren sed kasd takimata, ea amet dolores ut dolor diam stet accusam aliquyam est, est diam eos clita accusam ea ipsum. Elitr lorem lorem sea eirmod aliquyam. Eirmod sit no et lorem, amet rebum et erat consetetur ut voluptua. Amet et et dolores dolor. Voluptua tempor.</p>
+        
+            <h2>What I don't do?</h2>
+            <p>Takimata nonumy diam dolores diam erat no sea accusam nonumy. Aliquyam et amet est vero elitr, justo magna dolores gubergren no et clita amet sanctus. Consetetur voluptua elitr justo dolor et labore, dolores diam kasd takimata sanctus sanctus dolor. No voluptua gubergren sea nonumy duo justo voluptua. Et eos dolor.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2021 Developed by, Nazre Imam Tahmid
+    </div>
+    
+</body>
+</html>
